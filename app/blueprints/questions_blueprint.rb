@@ -1,9 +1,9 @@
-class QuestionBlueprint < Blueprinter::Base
+class QuestionsBlueprint < Blueprinter::Base
   identifier :id
 
   fields :body
 
-  association :answers, blueprint: AnswerBlueprint do |question|
+  association :answers, blueprint: AnswersBlueprint do |question|
     question.answers
   end
 end
