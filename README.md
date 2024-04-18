@@ -2,7 +2,7 @@
 This Rails application serves as the backend API for the Introvert or Extrovert quiz. It provides endpoints for retrieving quiz questions and computing scores based on user answers.
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine for development purposes.
 
 ### Prerequisites
 Before running the Rails server, ensure you have the following dependencies installed on your machine:
