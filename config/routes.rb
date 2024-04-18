@@ -7,5 +7,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  resources :questions, only: [:show]
+  resources :questions, only: [:index] do
+    collection do
+      post 'compute_score'
+    end
+  end
 end
