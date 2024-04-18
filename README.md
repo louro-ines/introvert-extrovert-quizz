@@ -1,24 +1,47 @@
-# README
+# Introvert or Extrovert Quiz Rails API
+This Rails application serves as the backend API for the Introvert or Extrovert quiz. It provides endpoints for retrieving quiz questions and computing scores based on user answers.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Things you may want to cover:
+### Prerequisites
+Before running the Rails server, ensure you have the following dependencies installed on your machine:
 
-* Ruby version
+- Ruby (version 3.1.2)
+- Rails (version 7.1.3)
+- PostgreSQL
 
-* System dependencies
+### Installing
+1. Clone the repository to your local machine:
+```bash
+git clone <repository-url>
+```
 
-* Configuration
+2. Navigate into the project directory:
+```bash
+cd introvert-extrovert-quiz-api
+```
 
-* Database creation
+3. Install dependencies using Bundler:
+```bash
+bundle install
+```
 
-* Database initialization
+4. Create and migrate the database:
+```bash
+rails db:create
+rails db:migrate
+```
 
-* How to run the test suite
+### Running the Server
+Start the Rails server with the following command:
+```bash
+rails server
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+The API server will start running on http://localhost:3000.
 
-* Deployment instructions
-
-* ...
+## API Endpoints
+- GET /questions: Retrieve all quiz questions.
+- POST /questions/compute_score: Compute the user's personality score based on their answers.
+  - Request body should include an array of answer objects.
